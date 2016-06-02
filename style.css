@@ -1,0 +1,45 @@
+h1 { text-align: center; }
+
+row1 {
+	display: flex;
+	justify-content: center;
+}
+row2 {
+	display: flex;
+	justify-content: center;
+}
+
+row3 {
+	display: flex;
+	justify-content: center;
+}
+button {
+	margin: 0 auto;
+	width: 100px;
+	display: block;
+}
+.box {
+    background-color: #9ffff8;
+	border: 1px solid black;
+    border-radius: 5%;
+	width: 100px;
+	height: 100px;
+	font-size: 100px;
+	text-align: center;
+	line-height: 85px; 
+}
+
+box { margin: 0 auto; }
+
+#instructions { text-align: center; }
+
+.red { background-color: #ff7676; }
+
+.blue { background-color: #00a1c7; }
+
+button {
+    margin-top: 15px;
+    padding: 5px;
+    background-color: #00a1c7;
+    color: white;
+}
