@@ -62,18 +62,21 @@ $(document).ready(function() {
     $('.box').on('click', function(event) {
         var $id=event.currentTarget.id
         playTurn(parseInt($id));
-        console.log(grid.join("-")) //checking
+        //console.log(grid.join("-")) //checking
 
         //console.log(this);
-        console.log(player);
+        console.log("Player " + player + " turn");
+        $('#instructions').html("It is player " + player + "'s turn")
         // Frontend- Displaying playTurn(player) to box as html
         if (player == 1) {
-            $(this).html(2);
+            $(this).html('O');
         } else {
-            $(this).html(1);
+            $(this).html('X');
         }
-        console.log(grid);
-        console.log(whoWon());
+        //console.log(grid);
+        console.log('Player ' + whoWon() + ' wins');
+        
+
     })
 
 

@@ -31,7 +31,9 @@ button {
 
 box { margin: 0 auto; }
 
-#instructions { text-align: center; }
+#instructions { 
+    margin-bottom: 20px;
+    text-align: center; }
 
 .red { background-color: #ff7676; }
 
