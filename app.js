@@ -86,22 +86,20 @@ $(document).ready(function() {
         }
         //console.log(grid);
         console.log("Player " + whoWon() + " won!");
+        
+        // Show pop-up
+        if(whoWon() === 1 || whoWon() === 2) {
+            $('.card').removeClass('hide').html('<h2>Player ' + whoWon() + ' wins</h2><br><p>Click reset button for a new game.</p><br><button>Reset</button>');
+            // Reset button
+            $('button').on('click', function() {
+                console.log('Button clicked')
+                window.location.reload();
+            });
+            //turn off click when whoWon
+            $('.box').off('click');
+        }
+        
     })
     
-    $('.card').removeClass(function() {
-        if(whoWon() === 1 || whoWon() === 2) {
-            $('.card')
-            
-        }
-    })
-
-
-    $('button').on('click', function() {
-        console.log('Button clicked')
-        window.location.reload();
-    })
-
-    pop_up();
-
 });
 
