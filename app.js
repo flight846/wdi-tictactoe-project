@@ -75,7 +75,6 @@ $(document).ready(function() {
         //console.log(grid.join("-")) //checking
 
         //console.log(this);
-<<<<<<< HEAD
         console.log("Player " + player + " turn");
         $('#instructions').html("It is player " + player + "'s turn")
         // Frontend- Displaying playTurn(player) to box as html
@@ -86,9 +85,6 @@ $(document).ready(function() {
         }
         //console.log(grid);
         console.log('Player ' + whoWon() + ' wins');
-        
-
-=======
         console.log("Now player" + player + "'s turn");
         // Frontend- Displaying playTurn(player) to box as html
         if (player == 1) {
@@ -98,7 +94,6 @@ $(document).ready(function() {
         }
         //console.log(grid);
         console.log("Player " + whoWon() + " won!");
->>>>>>> 0d1fc0dd4f86da3e748ac8c18f670ba2a81332b7
     })
 
 
