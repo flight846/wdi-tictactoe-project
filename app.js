@@ -51,15 +51,7 @@ $(document).ready(function() {
       return 0
     }
 
-    function pop_up() {
-        if  (whoWon() !== 0 && whoWon() === 1) {
-            $('.pop-up h3').html("Player" + whoWon() + " won!!").removeClass('.hide');
-        }  else if (whoWon() === 2) {
-            $('.pop-up h3').html("Player" + whoWon() + " won!!").removeClass('.hide');
-        }
-        return false
-    }
-
+    
     // When resert button is pressed, grid index is resetted
     function restart() {
       grid = [null, null, null, null, null, null, null, null, null]
@@ -94,6 +86,13 @@ $(document).ready(function() {
         }
         //console.log(grid);
         console.log("Player " + whoWon() + " won!");
+    })
+    
+    $('.card').removeClass(function() {
+        if(whoWon() === 1 || whoWon() === 2) {
+            $('.card')
+            
+        }
     })
 
 
