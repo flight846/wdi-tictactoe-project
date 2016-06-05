@@ -1,4 +1,22 @@
-h1 { text-align: center; }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center; }
+
+#instructions {
+    margin: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
 
 row1 {
 	display: flex;
@@ -13,14 +31,10 @@ row3 {
 	display: flex;
 	justify-content: center;
 }
-button {
-	margin: 0 auto;
-	width: 100px;
-	display: block;
-}
+
 .box {
     background-color: #9ffff8;
-	border: 1px solid black;
+	border: 1px solid white;
     border-radius: 5%;
 	width: 100px;
 	height: 100px;
@@ -33,11 +47,27 @@ box { margin: 0 auto; }
 
 #instructions { text-align: center; }
 
-.red { background-color: #ff7676; }
+.card {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    background-color: #fc6a6a;
+    text-align: center;
+    height: 250px;
+    width: 480px;
+    box-shadow: 0px 5px 20px -4px;
+}
 
-.blue { background-color: #00a1c7; }
+.hide {
+    display: none;
+}
 
 button {
+    width: 100px;
     margin-top: 15px;
     padding: 5px;
     background-color: #00a1c7;
